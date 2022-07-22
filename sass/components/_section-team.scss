@@ -1,0 +1,116 @@
+.page-team {
+    background-color: $secondary-bg-color;
+
+    @media screen and(max-width: 1199px){
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media screen and(min-width: $desctop){
+        padding-bottom: 94px;
+        padding-top: 94px;
+    }
+}
+
+.team {
+    @extend %list;
+    
+    padding-top: 0;
+    padding-bottom: 0;
+
+    @media screen and(max-width: 767px){
+        :last-child {
+                margin-bottom: 0;
+            }
+    }
+    
+    @media screen and(min-width: $desctop){
+        @include flex($align: none, $justify: space-between);
+    }
+}
+
+.team__item {
+    background-color: $white-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    @media screen and(max-width: 767px){
+        margin-bottom: 30px;
+    }
+
+    @media screen and(min-width: $desctop){
+        width: calc((100% - 90px) / 4);
+    }
+}
+
+.team__image {
+    display: flex;
+}
+
+.team__text {
+    margin-bottom: 16px;
+    margin-top: 10px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team__title {
+    margin-bottom: 0px;
+    margin-top: 30px;
+    color: $secondary-text-color;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team__info {
+    @extend %list;
+    @include flex($align:none);
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 24px;
+}
+
+.info__link {
+    @include flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    
+
+    @include animation(background-color);
+
+    &:hover, &:focus {
+            background-color: $accent-color;
+        }
+
+    &:hover .info__social, &:focus .info__social {
+        fill: $white-color;
+    }
+}
+
+.info__box {
+    margin-right: 5px;
+        margin-left: 5px;
+    
+        &:first-child {
+            margin-left: 0;
+        }
+    
+        &:last-child {
+            margin-right: 0;
+        }
+}
+
+.info__social {
+    fill: #afb1b8;
+}

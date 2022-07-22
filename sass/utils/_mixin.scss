@@ -1,0 +1,16 @@
+@mixin flex($display: flex, $align: center, $justify: center) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin bordered($type: solid, $radius: 2px, $size: 2px, $color: $secondary-text-color ) {
+    border: $size $type $color;
+    border-radius: $radius;
+}
+
+@mixin animation($property, $duration: 250ms, $function: $timing-function) {
+    transition-property: $property;
+    transition-duration: $duration;
+    transition-timing-function: $function;
+}

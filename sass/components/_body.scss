@@ -1,0 +1,28 @@
+body {
+    background-color: $white-color;
+    color: $primary-text-color;
+
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+a {
+    padding: 5px;
+    text-decoration: none;
+}
+
+textarea {
+    resize: none;
+}

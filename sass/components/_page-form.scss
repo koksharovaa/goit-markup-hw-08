@@ -1,0 +1,114 @@
+.page-form {
+    width: 528px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.form__title {
+     margin-bottom: 12px;
+     font-style: normal;
+     font-weight: 700;
+     font-size: 20px;
+     line-height: 23px;
+     text-align: left;
+
+     color: $secondary-text-color;
+ }
+
+.form__field {
+    position: relative;
+    @include flex($align: normal, $justify:none);
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form__field:focus-within>.form__icon {
+    fill: $accent-color;
+}
+
+.form__label {
+    margin-bottom: 4px;
+
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+.form__input {
+    padding-top: 12px;
+    padding-left: 42px;
+    padding-bottom: 12px;
+    padding-right: 16px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    @include bordered($size: 1px, $radius:4px, $color:rgba(33, 33, 33, 0.2));
+
+    @include animation(border);
+
+    &:hover {
+            border-color: $accent-color;
+        }
+
+    &:hover~svg {
+        fill: $accent-color;
+    }
+
+    &:focus {
+        outline: 1px solid $accent-color;
+    }
+}
+
+.form__icon {
+    position: absolute;
+    display: inline;
+    top: 50%;
+    left: 0;
+    transform: translate(100%, 20%);
+    fill: $secondary-text-color;
+
+    @include animation(fill);
+}
+
+.form__comment {
+    min-height: 120px;
+    padding-top: 12px;
+    padding-left: 16px;
+    padding-bottom: 12px;
+    padding-right: 16px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    @include bordered($size: 1px, $color:rgba(33, 33, 33, 0.2), $radius:4px);
+    
+    @include animation(border);
+
+    &:hover {
+            border: 1px solid $accent-color;
+        }
+
+    &:focus {
+        outline: 1px solid $accent-color;
+    }
+
+    &::placeholder {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+    }
+}

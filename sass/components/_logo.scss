@@ -1,0 +1,15 @@
+.logo {
+    padding: 0;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    color: $accent-color;
+
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2;
+
+    &:focus {
+            color: $accent-color;
+        }
+}

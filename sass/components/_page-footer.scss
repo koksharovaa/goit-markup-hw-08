@@ -1,0 +1,191 @@
+.page-footer {
+    background-color: $third-bg-color;
+
+    @media screen and(min-width: $desctop){
+        flex-direction: column;
+    }
+}
+
+.footer__logo {
+    padding: 0;
+
+    color: $accent-color;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+}
+
+.footer__title {
+    @media screen and(max-width: 767px){
+    }
+
+    @media screen and(min-width: $desctop){
+        @include flex($align: baseline, $justify: none);
+    } 
+}
+
+.title__logo,
+.footer__navigation {
+    width: 25%;
+}
+
+.title__join,
+.join__block {
+    width: 25%;
+}
+
+.title__subscribe,
+.form__container {
+    width: 50%;
+}
+
+.footer__info {
+    @media screen and(min-width: $desctop){
+        @include flex($justify: none, $align: none);
+    }
+    
+}
+
+.footer__list {
+    margin-top: 20px;
+    list-style: none;
+}
+
+.footer__address {
+    font-size: 14px;
+    line-height: 24px;
+    color: $white-color;
+
+    @include animation(color);
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.address__title {
+    margin-top: 9px;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.6);
+
+    @include animation(color);
+
+    &:focus,
+    &:hover {
+        color: $accent-color;
+    }
+}
+
+.join__block {
+    display: block;
+}
+
+.join {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    display: block;
+    text-transform: uppercase;
+    color: $white-color;
+}
+
+.join__add {
+    @extend %list;
+    @include flex($justify: flex-start, $align:none);
+    margin-top: 20px;
+}
+
+.join__item {
+    margin-right: 10px;
+
+    &:nth-child(4n) {
+            margin-right: 0;
+        }
+}
+
+.join__link {
+    @include flex;
+    width: 44px;
+    height: 44px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+    @include animation(background-color);
+
+    &:focus,
+    &:hover {
+        color: $accent-color;
+        background-color: $accent-color;
+    }
+}
+
+.join__social {
+    fill: $white-color;
+}
+
+.form__footer {
+    margin-top: 20px;
+}
+
+.footer__email {
+    box-sizing: border-box;
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    background-color: $third-bg-color;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+
+    @include animation(border outline);
+
+    &::placeholder {
+        @include flex($justify:none);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    &:hover {
+        border: 2px solid $accent-color;
+    }
+
+    &:focus {
+        outline: 2px solid $accent-color;
+    }
+}
+
+.footer__button {
+    @include flex($display: inline-flex);
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 29px;
+    padding-bottom: 10px;
+    width: 200px;
+    height: 50px;
+    flex-direction: row;
+
+    &::after {
+        content: '';
+        width: 24px;
+        height: 24px;
+        margin-left: 10px;
+        background-size: contain;
+        background-image: url('/images/icon-send.svg');
+        background-repeat: no-repeat;
+        cursor: pointer;
+        align-items: center;
+        background-position: center;
+    }
+}

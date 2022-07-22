@@ -1,0 +1,21 @@
+.h2__title {
+    margin-top: 0;
+    color: $secondary-text-color;
+
+    font-weight: 700;
+    text-align: center;
+
+    @media screen and(max-width:1199px){
+        margin-bottom: 30px;
+
+        font-size: 28px;
+        line-height: 33px;
+    }
+
+    @media screen and(min-width: $desctop){
+        margin-bottom: 50px;
+
+        font-size: 36px;
+        line-height: 42px;
+    }
+}

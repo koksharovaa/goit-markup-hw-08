@@ -1,0 +1,25 @@
+.hero__button,
+.footer__button {
+    @extend .button;
+    color: $white-color;
+    background-color: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 0px;
+
+    font-weight: bold;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+
+    @include animation(background-color);
+
+    &:focus,
+    &:focus {
+        color: $white-color;
+        background-color: $accent-color;
+    }
+
+    &:hover,
+    &:hover {
+        background-color: #1976d2;
+    }
+}

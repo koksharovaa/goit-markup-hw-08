@@ -1,5 +1,4 @@
 .page-customers {
-        width: $mobile;
         padding-top: 60px;
         padding-bottom: 60px;
         
@@ -15,7 +14,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 450px;
 
     padding-top: 0;
     padding-bottom: 0;
@@ -58,7 +56,6 @@
     
     @include animation(background-color);
 
-    width: 210px;
     height: 92px;
     
     padding-top: 16px;

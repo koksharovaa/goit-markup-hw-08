@@ -4,10 +4,10 @@
 
     background-color: $secondary-bg-color;
 
-    // @media screen and(min-width: $desctop){
-    //     padding-bottom: 94px;
-    //     padding-top: 94px;
-    // }
+    @media screen and(min-width: $desctop){
+        padding-bottom: 94px;
+        padding-top: 94px;
+    }
 }
 
 .team {
@@ -20,9 +20,9 @@
             margin-bottom: 0;
         }
     
-    // @media screen and(min-width: $desctop){
-    //     @include flex($align: none, $justify: space-between);
-    // }
+    @media screen and(min-width: $desctop){
+        @include flex($align: none, $justify: space-between);
+    }
 }
 
 .team__item {

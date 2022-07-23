@@ -2,9 +2,9 @@
     padding-bottom: 60px;
     padding-top: 60px;
 
-    // @media screen and(min-width: $desctop){
-    //     padding-top: 94px;
-    // }
+    @media screen and(min-width: $desctop){
+        padding-top: 94px;
+    }
 }
 
 .benefits {
@@ -13,15 +13,15 @@
     padding-top: 0;
     padding-bottom: 0;
 
-    // @media screen and(min-width: $desctop){
-    //     @include flex($align: none, $justify: space-between);
-    // }
+    @media screen and(min-width: $desctop){
+        @include flex($align: none, $justify: space-between);
+    }
 }
 
 .item {
-    // @media screen and(min-width: $desctop){
-    //     width: calc((100% - 90px) / 4);
-    // }
+    @media screen and(min-width: $desctop){
+        width: calc((100% - 90px) / 4);
+    }
     
 
     &::before {

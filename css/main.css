@@ -729,35 +729,12 @@ nav {
   padding-bottom: 60px;
   padding-top: 60px;
 }
-@media screen and (min-width: 1200px) {
-  .page-benefits {
-    padding-top: 94px;
-  }
-}
 
 .benefits {
   padding-top: 0;
   padding-bottom: 0;
 }
-@media screen and (min-width: 1200px) {
-  .benefits {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: none;
-        -ms-flex-align: none;
-            align-items: none;
-  }
-}
 
-@media screen and (min-width: 1200px) {
-  .item, .astronaut__item, .diagram__item, .clock__item, .details__item {
-    width: calc((100% - 90px) / 4);
-  }
-}
 .item::before, .astronaut__item::before, .diagram__item::before, .clock__item::before, .details__item::before {
   display: block;
   content: "";
@@ -883,12 +860,6 @@ nav {
   padding-bottom: 60px;
   background-color: #F5F4FA;
 }
-@media screen and (min-width: 1200px) {
-  .page-team {
-    padding-bottom: 94px;
-    padding-top: 94px;
-  }
-}
 
 .team {
   padding-top: 0;
@@ -896,19 +867,6 @@ nav {
 }
 .team :nth-last-child(-n+1) {
   margin-bottom: 0;
-}
-@media screen and (min-width: 1200px) {
-  .team {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: none;
-        -ms-flex-align: none;
-            align-items: none;
-  }
 }
 
 .team__item {

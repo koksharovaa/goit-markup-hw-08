@@ -1,9 +1,7 @@
 .page-customers {
-        @media screen and(max-width: 767px) {
-            width: $mobile;
-                padding-top: 60px;
-                padding-bottom: 60px;
-            }
+        width: $mobile;
+        padding-top: 60px;
+        padding-bottom: 60px;
         
             @media screen and(min-width: $desctop) {
                 padding-bottom: 94px;
@@ -14,18 +12,16 @@
 .customers {
     @extend %list;
     
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 450px;
+
     padding-top: 0;
     padding-bottom: 0;
 
-    @media screen and(max-width: 767px){
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 450px;
-
-        :nth-last-child(-n + 2) {
-            margin-bottom: 0;
-        }
+    :nth-last-child(-n + 2) {
+        margin-bottom: 0;
     }
 
     @media screen and(min-width: $desctop){
@@ -35,11 +31,9 @@
 }
 
 .customers__item {
-    @media screen and(max-width: 767px){
-        width: calc((100% - 30px) / 2);
-
-        margin-bottom: 30px;
-    }
+    width: calc((100% - 30px) / 2);
+    
+    margin-bottom: 30px;
 
     @media screen and(min-width: $desctop){
         width: calc((100% - 150px) / 6);
@@ -64,22 +58,20 @@
     
     @include animation(background-color);
 
+    width: 210px;
+    height: 92px;
+    
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 52px;
+    padding-right: 52px;
+
     &:hover, &:focus {
             border: 1px solid $accent-color;
         }
 
     &:hover .customers__image, &:focus .customers__image {
         fill: $accent-color;
-    }
-
-    @media screen and(max-width: 767px){
-        width: 210px;
-        height: 92px;
-
-        padding-top: 16px;
-        padding-bottom: 16px;
-        padding-left: 52px;
-        padding-right: 52px;
     }
 
     @media screen and(min-width: $desctop){

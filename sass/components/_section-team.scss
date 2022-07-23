@@ -1,10 +1,8 @@
 .page-team {
-    background-color: $secondary-bg-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
-    @media screen and(max-width: 1199px){
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
+    background-color: $secondary-bg-color;
 
     @media screen and(min-width: $desctop){
         padding-bottom: 94px;
@@ -18,11 +16,9 @@
     padding-top: 0;
     padding-bottom: 0;
 
-    @media screen and(max-width: 767px){
-        :last-child {
-                margin-bottom: 0;
-            }
-    }
+    :nth-last-child(-n+1) {
+            margin-bottom: 0;
+        }
     
     @media screen and(min-width: $desctop){
         @include flex($align: none, $justify: space-between);
@@ -30,14 +26,12 @@
 }
 
 .team__item {
+    margin-bottom: 30px;
+
     background-color: $white-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-
-    @media screen and(max-width: 767px){
-        margin-bottom: 30px;
-    }
 
     @media screen and(min-width: $desctop){
         width: calc((100% - 90px) / 4);

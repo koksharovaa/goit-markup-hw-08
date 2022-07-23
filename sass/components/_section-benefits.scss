@@ -1,9 +1,6 @@
 .page-benefits {
-    padding-bottom: 0;
-    
-    @media screen and(max-width: 1199px){
-        padding-top: 60px;
-    }
+    padding-bottom: 60px;
+    padding-top: 60px;
 
     @media screen and(min-width: $desctop){
         padding-top: 94px;
@@ -41,9 +38,7 @@
 .details__item {
     @extend .item;
 
-    @media screen and(max-width: 767px) {
-            margin-bottom: 30px;
-        }
+    margin-bottom: 30px;
 
     &::before {
             background-image: url('../images/antenna.svg');
@@ -53,9 +48,7 @@
 .clock__item {
     @extend .item;
 
-    @media screen and(max-width: 767px){
-        margin-bottom: 30px;
-    }
+    margin-bottom: 30px;
 
     &::before {
             background-image: url('../images/clock.svg');
@@ -65,9 +58,7 @@
 .diagram__item {
     @extend .item;
 
-    @media screen and(max-width: 767px) {
-            margin-bottom: 30px;
-        }
+    margin-bottom: 30px;
 
     &::before {
             background-image: url('../images/diagram.svg');
@@ -76,10 +67,6 @@
 
 .astronaut__item {
     @extend .item;
-
-    @media screen and(max-width: 767px) {
-            margin-bottom: 60px;
-        }
 
     &::before {
             background-image: url('../images/astronaut1.svg');
@@ -95,10 +82,7 @@
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
-    @media screen and(max-width: 767px){
-        text-align: center;
-    }
+    text-align: center;
 }
 
 .benefits__text {

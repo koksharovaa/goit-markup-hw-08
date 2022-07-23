@@ -1,10 +1,5 @@
 .page-hero {
-    width: $mobile;
     text-align: center;
-
-    @media screen and(min-width: $tablet){
-        width: $tablet;
-    }
 }
 
 .overlay {

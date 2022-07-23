@@ -27,16 +27,16 @@
 .checkbox__label {
     @include flex;
 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 14px;
+
     color: $secondary-text-color;
 
-    @media screen and(max-width: 767px){
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 11px;
-        line-height: 14px;
-        
-        letter-spacing: 0.03em;
+    @media screen and(min-width: $desctop){
+        font-size: 14px;
+        line-height: 24px;
     }
 }
 

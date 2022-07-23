@@ -17,6 +17,8 @@
 
 .modal {
     position: absolute;
+    max-width: 450px;
+    max-height: 609px;
     
     background-color: $white-color;
     transform: translate(-50%, -50%);
@@ -27,14 +29,9 @@
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 
-    @media screen and(max-width:767px){
-        max-width: 450px;
-        max-height: 609px;
-    }
-
     @media screen and(min-width: $desctop){
         max-width: 528px;
-            max-height: 581px;
+        max-height: 581px;
     }
 }
 
@@ -46,6 +43,7 @@
     
     top: 8px;
     right: 8px;
+    left: 412px;
 
     background-color: $white-color;
     fill: black;
@@ -58,10 +56,6 @@
     &:hover,
     &:focus {
         fill: $accent-color;
-    }
-
-    @media screen and(max-width: 767px){
-        left: 412px;
     }
 
     @media screen and(min-width: $desctop){

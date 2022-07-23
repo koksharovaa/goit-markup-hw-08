@@ -1,51 +1,56 @@
 .page-hero {
+    width: $mobile;
     text-align: center;
 
-    @media screen and(max-width:767px){
-        width: $mobile;
+    @media screen and(min-width: $tablet){
+        width: $tablet;
     }
+
+    // @media screen and(max-width: 1199px){
+    //     width: $tablet;
+    // }
 }
 
 .overlay {
+    height: 400px;
+    margin: 0 auto;
+    padding-top: 118px;
     
-    margin-left: auto;
-    margin-right: auto;
     background-image: linear-gradient(to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url('../images/new_photo.jpg');
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url('../images/mobile-header.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
-    @media screen and(max-width: 797px){
-        width: auto;
-        height: 400px;
-        padding-top: 118px;
+    
+    @media screen and(min-width: $tablet){
+        background-image: inear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+                url('../images/tablet-header.jpg');
     }
 
     @media screen and(min-width: $desctop){
-        width: auto;
-            height: 600px;
+        max-width: 1600px;
+        height: 600px;
         padding-top: 200px;
+
+        background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url('../images/new_photo.jpg');
     }
 }
 
 .hero__title {
-    padding-bottom: 30px;
-    padding-top: 0;
+    padding: 0 0 30px;
+    text-align: center;
 
     color: $white-color;
-
+    font-size: 26px;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 60px;
+    line-height: 42px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-
-    @media screen and(max-width:767px){
-        font-size: 26px;
-        line-height: 42px;
-        text-align: center;
-    }
 }

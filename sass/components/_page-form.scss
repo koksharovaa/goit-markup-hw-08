@@ -5,10 +5,7 @@
     padding-bottom: 40px;
     padding-left: 40px;
     padding-right: 40px;
-
-    @media screen and(max-width: 767px){
-        width: 450px;
-    }
+    width: 450px;
 
     @media screen and(min-width: $desctop){
         width: 528px;
@@ -16,21 +13,17 @@
 }
 
 .form__title {
-     margin-bottom: 12px;
-     font-style: normal;
-     font-weight: 700;
-     font-size: 20px;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    
+    text-align: center;
      
-     color: $secondary-text-color;
+    color: $secondary-text-color;
 
-     @media screen and(max-width: 767px){
-        line-height: 30px;
-        text-align: center;
-     }
-
-     @media screen and(min-width: $desctop){
+    @media screen and(min-width: $desctop){
         line-height: 23px;
-        text-align: left;
      }
  }
 

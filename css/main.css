@@ -243,6 +243,11 @@ nav {
 .page-hero {
   text-align: center;
 }
+@media screen and (max-width: 767px) {
+  .page-hero {
+    width: 480px;
+  }
+}
 
 .overlay {
   margin-left: auto;
@@ -1004,7 +1009,7 @@ nav {
   fill: #afb1b8;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .page-customers {
     padding-top: 60px;
     padding-bottom: 60px;

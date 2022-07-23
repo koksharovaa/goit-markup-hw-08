@@ -114,6 +114,13 @@ nav {
     display: none;
   }
 }
+@media screen and (min-width: 1200px) {
+  .nav__menu {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
 
 .navigation {
   display: -webkit-box;
@@ -186,9 +193,14 @@ nav {
           align-items: center;
   margin-left: auto;
 }
+@media screen and (min-width: 1200px) {
+  .contact {
+    margin-left: 269px;
+  }
+}
 
 .contact__item:nth-child(n+2) {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 .contact__link {
@@ -260,14 +272,14 @@ nav {
 }
 @media screen and (max-width: 797px) {
   .overlay {
-    width: 480px;
+    width: auto;
     height: 400px;
     padding-top: 118px;
   }
 }
 @media screen and (min-width: 1200px) {
   .overlay {
-    width: 1600px;
+    width: auto;
     height: 600px;
     padding-top: 200px;
   }
@@ -309,8 +321,6 @@ nav {
 
 .modal {
   position: absolute;
-  max-width: 528px;
-  max-height: 581px;
   background-color: #ffffff;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -320,6 +330,18 @@ nav {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
+@media screen and (max-width: 767px) {
+  .modal {
+    max-width: 450px;
+    max-height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    max-height: 581px;
+  }
+}
 
 .modal__button {
   position: absolute;
@@ -327,7 +349,6 @@ nav {
           box-sizing: border-box;
   width: 30px;
   height: 30px;
-  left: 490px;
   top: 8px;
   right: 8px;
   background-color: #ffffff;
@@ -346,9 +367,18 @@ nav {
 .modal__button:hover, .modal__button:focus {
   fill: #2196f3;
 }
+@media screen and (max-width: 767px) {
+  .modal__button {
+    left: 412px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__button {
+    left: 490px;
+  }
+}
 
 .page-form {
-  width: 528px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 40px;
@@ -356,15 +386,35 @@ nav {
   padding-left: 40px;
   padding-right: 40px;
 }
+@media screen and (max-width: 767px) {
+  .page-form {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-form {
+    width: 528px;
+  }
+}
 
 .form__title {
   margin-bottom: 12px;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
-  text-align: left;
   color: #212121;
+}
+@media screen and (max-width: 767px) {
+  .form__title {
+    line-height: 30px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form__title {
+    line-height: 23px;
+    text-align: left;
+  }
 }
 
 .form__field {
@@ -544,6 +594,16 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   color: #212121;
+}
+@media screen and (max-width: 767px) {
+  .checkbox__label {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+  }
 }
 
 .checkbox__icon {
@@ -1011,6 +1071,7 @@ nav {
 
 @media screen and (max-width: 767px) {
   .page-customers {
+    width: 480px;
     padding-top: 60px;
     padding-bottom: 60px;
   }

@@ -19,13 +19,13 @@
     background-size: cover;
 
     @media screen and(max-width: 797px){
-        width: 480px;
+        width: auto;
         height: 400px;
         padding-top: 118px;
     }
 
     @media screen and(min-width: $desctop){
-        width: 1600px;
+        width: auto;
             height: 600px;
         padding-top: 200px;
     }

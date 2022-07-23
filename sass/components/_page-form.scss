@@ -1,11 +1,18 @@
 .page-form {
-    width: 528px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 40px;
     padding-bottom: 40px;
     padding-left: 40px;
     padding-right: 40px;
+
+    @media screen and(max-width: 767px){
+        width: 450px;
+    }
+
+    @media screen and(min-width: $desctop){
+        width: 528px;
+    }
 }
 
 .form__title {
@@ -13,10 +20,18 @@
      font-style: normal;
      font-weight: 700;
      font-size: 20px;
-     line-height: 23px;
-     text-align: left;
-
+     
      color: $secondary-text-color;
+
+     @media screen and(max-width: 767px){
+        line-height: 30px;
+        text-align: center;
+     }
+
+     @media screen and(min-width: $desctop){
+        line-height: 23px;
+        text-align: left;
+     }
  }
 
 .form__field {

@@ -6,6 +6,10 @@ nav {
     @media screen and(max-width: 767px){
         display: none;
     }
+
+    @media screen and(min-width: $desctop){
+        display: inline-flex;
+    }
 }
 
 .navigation {
@@ -68,10 +72,14 @@ nav {
     @include flex($justify:none);
 
     margin-left: auto;
+
+    @media screen and(min-width: $desctop){
+        margin-left: 269px;
+    }
 }
 
 .contact__item:nth-child(n+2) {
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
 .contact__link {

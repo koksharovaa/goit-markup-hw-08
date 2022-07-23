@@ -28,6 +28,16 @@
     @include flex;
 
     color: $secondary-text-color;
+
+    @media screen and(max-width: 767px){
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 14px;
+        
+        letter-spacing: 0.03em;
+    }
 }
 
 .checkbox__icon {

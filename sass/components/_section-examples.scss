@@ -1,8 +1,6 @@
 .page-examples {
-    @media screen and(max-width: 1199px) {
-            padding-top: 60px;
-            padding-bottom: 60px;
-        }
+    padding-top: 60px;
+    padding-bottom: 60px;
     
         @media screen and(min-width: $desctop) {
             padding-bottom: 94px;
@@ -11,32 +9,35 @@
 }
 
 .examples__navigation {
+    display: flex;
+    flex-wrap: wrap;
+
     list-style: none;
+    
+        :nth-last-child(-n + 2) {
+            margin-bottom: 0;
+        }
+
+    @media screen and(min-width: $tablet){
+        justify-content: center;
+    }
 
     @media screen and(min-width: $desctop){
         @include flex($align: none);
         margin-bottom: 50px;
     }
-
-    @media screen and(max-width: 767px){
-        display: flex;
-        flex-wrap: wrap;
-
-        :nth-last-child(-n + 2) {
-            margin-bottom: 0;
-        }
-    }
 }
 
 .examples__item {
     margin-right: 8px;
+    margin-bottom: 15px;
 
     &:nth-child(5) {
             margin-right: 0;
         }
 
-    @media screen and(max-width: 767px){
-        margin-bottom: 15px;
+    @media screen and(min-width: $tablet){
+        margin-bottom: 0;
     }
 }
 

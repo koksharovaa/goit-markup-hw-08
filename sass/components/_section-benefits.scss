@@ -13,12 +13,21 @@
     padding-top: 0;
     padding-bottom: 0;
 
+    @media screen and(min-width: $tablet){
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     @media screen and(min-width: $desctop){
         @include flex($align: none, $justify: space-between);
     }
 }
 
 .item {
+    @media screen and(min-width: $tablet){
+        width: calc((100% - 30px) / 2);
+    }
+
     @media screen and(min-width: $desctop){
         width: calc((100% - 90px) / 4);
     }
@@ -40,6 +49,10 @@
 
     margin-bottom: 30px;
 
+    @media screen and(min-width: $tablet){
+        margin-right: 30px;
+    }
+
     &::before {
             background-image: url('../images/antenna.svg');
         }
@@ -59,6 +72,11 @@
     @extend .item;
 
     margin-bottom: 30px;
+
+    @media screen and(min-width: $tablet) {
+            margin-right: 30px;
+            margin-bottom: 0;
+        }
 
     &::before {
             background-image: url('../images/diagram.svg');

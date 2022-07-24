@@ -5,19 +5,26 @@ nav {
 .nav__menu {
     display: none;
 
-    // @media screen and(min-width: $tablet){
-    //     display: flex;
-    // }
+    @media screen and(min-width: $tablet){
+        display: flex;
+    }
 
-    // @media screen and(min-width: $desctop){
-    //     display: flex;
-    // }
+    @media screen and(min-width: $desctop){
+        display: flex;
+    }
 }
 
 .navigation {
     @extend %list;
     @include flex($justify:none, $align:none);
-    margin-left: 93px;
+
+    @media screen and(min-width: $tablet){
+        margin-left: 88px;
+    }
+
+    @media screen and(min-width: $desctop){
+        margin-left: 93px;
+    }
 }
 
 .navigation__item:nth-child(n+2) {
@@ -34,7 +41,7 @@ nav {
 
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 16px;
     letter-spacing: 0.02em;
 
     @include animation(color);
@@ -51,6 +58,7 @@ nav {
 
     padding-right: 0;
     padding-left: 0;
+
     color: $accent-color;
 
     &::after {
@@ -71,29 +79,40 @@ nav {
 
 .contact {
     @extend %list;
-    @include flex($justify:none);
-
+    
     margin-left: auto;
 
+    @media screen and(min-width: $tablet){
+        display: block;
+        margin-top: 15px;
+        margin-left: 50px;
+    }
+
     @media screen and(min-width: $desctop){
+        @include flex($justify: none);
         margin-left: 269px;
     }
 }
 
-.contact__item:nth-child(n+2) {
-    margin-left: 30px;
-}
+// .contact__item {
+//     @media screen ( min-width: $desctop ) {
+//         :nth-child(n+2) {
+//                 margin-left: 30px;
+//             }
+//         }
+// }
 
 .contact__link {
     @include flex($align:none, $justify:none);
-    padding-top: 32px;
-    padding-bottom: 32px;
     align-items: center;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 14px;
+    
     letter-spacing: 0.02em;
     color: $primary-text-color;
+
+    
 
     @include animation(color);
 
@@ -105,6 +124,11 @@ nav {
     &:hover .mail,
     &:focus .mail {
         fill: $accent-color;
+    }
+
+    @media screen and(min-width: $desctop){
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
 }
 

@@ -3,41 +3,21 @@
 
     padding-top: 0;
     padding-bottom: 0;
+    margin-top: 40px;
 
-    @media screen and(max-width: 767px){
-        margin-top: 40px;
+    :nth-child(9) {
+        margin-bottom: 0;
     }
 
-    @media screen and(min-width: $desctop){
+    @media screen and(min-width: $tablet){
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
 }
 
 .cards__item {
     margin-bottom: 30px;
-
-    @media screen and(max-width: 767px){
-        :nth-last-child(-n+1) {
-            margin-bottom: 0;
-        }
-    }
-
-    @media screen and(min-width:$desctop){
-        width: calc((100% - 60px) / 3);
-
-        margin-right: 30px;
-        
-
-        :nth-child(3n) {
-                margin-right: 0;
-            }
-        
-        :nth-last-child(-n + 3) {
-                margin-bottom: 0;
-            }
-    }
-    
 
     border: 1px solid #eeeeee;
     
@@ -51,6 +31,29 @@
 
     &:hover .cards__replacement {
         transform: translatey(0);
+    }
+
+    @media screen and(min-width: $tablet){
+        width: calc((100% - 30px) / 2);
+        
+
+        // :nth-child(2n + 1) {
+        //         margin-right: 30px;
+        //     }
+    }
+
+    @media screen and(min-width:$desctop) {
+        width: calc((100% - 60px) / 3);
+    
+        margin-right: 30px;
+    
+        :nth-child(3n) {
+            margin-right: 0;
+        }
+    
+        :nth-last-child(-n + 3) {
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -85,6 +88,8 @@
     margin-bottom: 2px;
     margin-left: 24px;
     margin-right: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     color: $secondary-text-color;
 
     font-weight: bold;

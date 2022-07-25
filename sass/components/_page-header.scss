@@ -8,10 +8,6 @@ nav {
     @media screen and(min-width: $tablet){
         display: flex;
     }
-
-    @media screen and(min-width: $desctop){
-        display: flex;
-    }
 }
 
 .navigation {
@@ -89,18 +85,19 @@ nav {
     }
 
     @media screen and(min-width: $desctop){
-        @include flex($justify: none);
-        margin-left: 269px;
+        @include flex($justify: flex-end);
+        margin-left: 287px;
+        margin-top: 0;
     }
 }
 
-// .contact__item {
-//     @media screen ( min-width: $desctop ) {
-//         :nth-child(n+2) {
-//                 margin-left: 30px;
-//             }
-//         }
-// }
+.contact__item {
+    @media screen and(min-width: $desctop) {
+        &:nth-child(n+2) {
+                margin-left: 20px;
+            }
+        }
+}
 
 .contact__link {
     @include flex($align:none, $justify:none);
@@ -129,6 +126,13 @@ nav {
     @media screen and(min-width: $desctop){
         padding-top: 32px;
         padding-bottom: 32px;
+
+        font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.02em;
     }
 }
 

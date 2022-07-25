@@ -23,9 +23,10 @@
     }
 
     @media screen and(min-width: $desctop){
-        max-width: 1600px;
+        min-width: 1200px;
         height: 600px;
         padding-top: 200px;
+        margin: 0;
 
         background-image: linear-gradient(to right,
                     rgba(47, 48, 58, 0.4),
@@ -44,4 +45,9 @@
     line-height: 42px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @media screen and(min-width: $desctop){
+        font-size: 44px;
+        line-height: 60px;
+    }
 }

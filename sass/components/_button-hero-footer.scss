@@ -23,3 +23,34 @@
         background-color: #1976d2;
     }
 }
+
+.footer__button {
+    @include flex($display: inline-flex);
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-left: 29px;
+    padding-bottom: 10px;
+    width: 200px;
+    height: 50px;
+    flex-direction: row;
+    
+
+    @media screen and(min-width: $desctop){
+        
+        margin: 0;
+        flex-direction: row;
+    }
+
+    &::after {
+        content: '';
+        width: 24px;
+        height: 24px;
+        margin-left: 10px;
+        background-size: contain;
+        background-image: url('/images/icon-send.svg');
+        background-repeat: no-repeat;
+        cursor: pointer;
+        align-items: center;
+        background-position: center;
+    }
+}

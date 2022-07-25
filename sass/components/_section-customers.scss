@@ -18,13 +18,8 @@
     padding-top: 0;
     padding-bottom: 0;
 
-    :nth-last-child(-n + 2) {
-        margin-bottom: 0;
-    }
-
     @media screen and(min-width: $desctop){
         @include flex($align: none, $justify: space-between);
-        // width: 1170px;
     }
 }
 
@@ -33,12 +28,22 @@
     
     margin-bottom: 30px;
 
+    &:nth-last-child(-n + 2) {
+            margin-bottom: 0;
+        }
+
     @media screen and(min-width: $tablet){
         width: calc((100% - 60px) / 3);
+
+        &:nth-last-child(-n+3) {
+            margin-bottom: 0;
+        }
     }
 
     @media screen and(min-width: $desctop){
         width: calc((100% - 150px) / 6);
+
+        margin-bottom: 0;
     }
 }
 

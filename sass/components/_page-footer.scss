@@ -1,9 +1,5 @@
 .page-footer {
     background-color: $third-bg-color;
-
-    @media screen and(min-width: $desctop){
-        flex-direction: column;
-    }
 }
 
 .footer__logo {
@@ -12,19 +8,19 @@
     color: $accent-color;
 
     font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+
+    @media screen and(min-width: $desctop){
+        font-size: 26px;
+        line-height: 31px;
+    }
 }
 
 .footer__title {
-    @media screen and(max-width: 767px){
-    }
-
-    @media screen and(min-width: $desctop){
         @include flex($align: baseline, $justify: none);
-    } 
 }
 
 .title__logo,
@@ -43,10 +39,7 @@
 }
 
 .footer__info {
-    @media screen and(min-width: $desctop){
-        @include flex($justify: none, $align: none);
-    }
-    
+    @include flex($justify: none, $align: none);
 }
 
 .footer__list {
@@ -68,7 +61,7 @@
 }
 
 .address__title {
-    margin-top: 9px;
+    margin-top: 8px;
     font-size: 14px;
     line-height: 24px;
     color: rgba(255, 255, 255, 0.6);
@@ -78,6 +71,10 @@
     &:focus,
     &:hover {
         color: $accent-color;
+    }
+
+    @media screen and(min-width: $desctop){
+        margin-top: 9px;
     }
 }
 
@@ -96,8 +93,12 @@
 
 .join__add {
     @extend %list;
-    @include flex($justify: flex-start, $align:none);
+    @include flex;
     margin-top: 20px;
+
+    @media screen and(min-width: $desctop){
+        @include flex($justify: flex-start, $align: none);
+    }
 }
 
 .join__item {
@@ -135,19 +136,29 @@
 
 .footer__email {
     box-sizing: border-box;
-    width: 358px;
     height: 50px;
-    margin-right: 12px;
+    width: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 16px;
     padding-right: 16px;
+    
 
     background-color: $third-bg-color;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
 
     @include animation(border outline);
+
+    @media screen and(min-width: $tablet){
+        width: 450px;
+    }
+
+    @media screen and(min-width: $desctop){
+        width: 358px;
+        
+        margin-right: 12px;
+    }
 
     &::placeholder {
         @include flex($justify:none);
@@ -166,26 +177,22 @@
     }
 }
 
-.footer__button {
-    @include flex($display: inline-flex);
-    margin: 0;
-    padding-top: 10px;
-    padding-left: 29px;
-    padding-bottom: 10px;
-    width: 200px;
-    height: 50px;
-    flex-direction: row;
-
-    &::after {
-        content: '';
-        width: 24px;
-        height: 24px;
-        margin-left: 10px;
-        background-size: contain;
-        background-image: url('/images/icon-send.svg');
-        background-repeat: no-repeat;
-        cursor: pointer;
-        align-items: center;
-        background-position: center;
+.mobile__box {
+    @media screen and(min-width: $tablet) {
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
     }
+}
+
+.footer__mobile__social {
+    margin-top: 60px;
+
+    @media screen and(min-width: $tablet){
+        margin-top: 0;
+    }
+}
+
+.footer__mobile__join {
+    margin-top: 60px;
 }

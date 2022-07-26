@@ -22,7 +22,7 @@
       <nav class="nav__container">
         <a href="./index.html" aria-label="Лого" class="logo">WebStudio</a>
 
-        <button class="nav__button" type="button" data-modal-open>
+        <button class="nav__button" type="button" data-menu-open>
           <svg
             class="nav__icon"
             aria-label="Переключатель мобильного меню"
@@ -36,9 +36,9 @@
           </svg>
         </button>
 
-        <div class="mobile__backdrop is-hidden" data-modal>
+        <div class="mobile__backdrop is-hidden" data-modal-menu>
           <div class="mobile__menu">
-            <button class="nav__button-close" type="button" data-modal-close>
+            <button class="nav__button-close" type="button" data-menu-close>
               <svg class="button-close__box">
                 <use
                   class="icon-menu-close"
@@ -148,17 +148,17 @@
             type="button"
             aria-label="Заказать услугу"
             class="hero__button"
-            data-modal-open
+            data-form-open
           >
             Заказать услугу
           </button>
         </div>
 
-        <div class="backdrop is-hidden" data-modal>
+        <div class="backdrop is-hidden" data-modal-form>
           <div class="modal">
-            <button type="button" class="modal__button" data-modal-close>
+            <button type="button" class="modal__button" data-form-close>
               <svg width="11px" height="11px">
-                <use href="/images/symbol-defs.svg#icon-close"></use>
+                <use href="./images/symbol-defs.svg#icon-close"></use>
               </svg>
             </button>
             <form class="page-form">
@@ -175,7 +175,7 @@
                 />
 
                 <svg class="form__icon" width="12px" height="12px">
-                  <use href="/images/symbol-defs.svg#icon-human"></use>
+                  <use href="./images/symbol-defs.svg#icon-human"></use>
                 </svg>
               </div>
               <div class="form__field">
@@ -188,7 +188,7 @@
                   id="telephone"
                 />
                 <svg class="form__icon" width="12px" height="12px">
-                  <use href="/images/symbol-defs.svg#icon-tel"></use>
+                  <use href="./images/symbol-defs.svg#icon-tel"></use>
                 </svg>
               </div>
               <div class="form__field">
@@ -200,7 +200,7 @@
                   id="email"
                 />
                 <svg class="form__icon" width="12px" height="12px">
-                  <use href="/images/symbol-defs.svg#icon-pochta"></use>
+                  <use href="./images/symbol-defs.svg#icon-pochta"></use>
                 </svg>
               </div>
               <div class="form__field">
@@ -790,6 +790,5 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
-    <script src="./js/form.js"></script>
   </body>
 </html>

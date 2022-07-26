@@ -1,14 +1,23 @@
 (() => {
     const refs = {
-      openModalBtn: document.querySelector('[data-modal-open]'),
-      closeModalBtn: document.querySelector('[data-modal-close]'),
-      modal: document.querySelector('[data-modal]'),
+      openMenuModalBtn: document.querySelector('[data-menu-open]'),
+      closeMenuModalBtn: document.querySelector('[data-menu-close]'),
+      openFormModalBtn: document.querySelector('[data-form-open]'),
+      closeFormModalBtn: document.querySelector('[data-form-close]'),
+      menuModal: document.querySelector('[data-modal-menu]'),
+      formModal: document.querySelector('[data-modal-form]')
     };
   
-    refs.openModalBtn.addEventListener('click', toggleModal);
-    refs.closeModalBtn.addEventListener('click', toggleModal);
+  refs.openMenuModalBtn.addEventListener('click', toggleMenuModal);
+  refs.closeMenuModalBtn.addEventListener('click', toggleMenuModal);
+  refs.openFormModalBtn.addEventListener('click', toggleFormModal);
+  refs.closeFormModalBtn.addEventListener('click', toggleFormModal);
   
-    function toggleModal() {
-      refs.modal.classList.toggle('is-hidden');
-    }
+  function toggleMenuModal(e) {
+    refs.menuModal.classList.toggle('is-hidden');
+  }
+
+  function toggleFormModal(e) {
+    refs.formModal.classList.toggle('is-hidden');
+  }
   })();

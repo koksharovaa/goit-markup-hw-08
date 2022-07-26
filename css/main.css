@@ -363,9 +363,11 @@ nav {
   margin-left: 50px;
 }
 
-.navigation__menu a {
+.navigation__list a {
   position: relative;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding-bottom: 32px;
   padding-top: 32px;
   color: #212121;
@@ -380,7 +382,7 @@ nav {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.navigation__menu a:hover, .navigation__menu a:focus {
+.navigation__list a:hover, .navigation__list a:focus {
   color: #2196f3;
 }
 
@@ -927,7 +929,7 @@ nav {
   height: 24px;
   margin-left: 10px;
   background-size: contain;
-  background-image: url("./images/icon-send.svg");
+  background-image: url("../images/symbol-defs.svg#icon-telegram");
   background-repeat: no-repeat;
   cursor: pointer;
   -webkit-box-align: center;

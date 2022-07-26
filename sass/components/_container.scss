@@ -20,16 +20,17 @@
     padding-left: 15px;
     padding-right: 15px;
     margin: auto;
+
+    justify-content: space-between;
     
         @media screen and(min-width: $mobile) {
             width: $mobile;
             padding-right: 10px;
-
-            justify-content: space-between;
         }
     
         @media screen and(min-width: $tablet) {
             width: $tablet;
+            justify-content: none;
         }
     
         @media screen and(min-width: $desctop) {

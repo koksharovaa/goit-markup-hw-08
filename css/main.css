@@ -1,4 +1,4 @@
-.join__add, .cards, .customers, .team__info, .team, .business, .benefits, .contact, .navigation {
+.join__add, .cards, .customers, .team__info, .team, .business, .benefits, .contact, .navigation, .mobile__social, .mobile__info, .mobile__list {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -84,19 +84,22 @@ textarea {
   padding-left: 15px;
   padding-right: 15px;
   margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media screen and (min-width: 480px) {
   .nav__container {
     width: 480px;
     padding-right: 10px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
 }
 @media screen and (min-width: 768px) {
   .nav__container {
     width: 768px;
+    -webkit-box-pack: none;
+        -ms-flex-pack: none;
+            justify-content: none;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -160,6 +163,38 @@ textarea {
   cursor: pointer;
 }
 
+.mobile__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+@media screen and (min-width: 768px) {
+  .mobile__backdrop {
+    display: none;
+  }
+}
+
+.mobile__backdrop.is-hidden {
+  visibility: inherit;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.mobile__menu {
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  background-color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .mobile__menu {
+    display: none;
+  }
+}
+
 .nav__button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -183,15 +218,6 @@ textarea {
   border: none;
   background-color: transparent;
 }
-.nav__button.is-open .icon-menu {
-  display: none;
-}
-.nav__button .icon-menu-close {
-  display: none;
-}
-.nav__button.is-open .icon-menu-close {
-  display: block;
-}
 .nav__button:hover, .nav__button:focus {
   outline: 1px solid #2196f3;
 }
@@ -202,6 +228,139 @@ textarea {
   .nav__button {
     display: none;
   }
+}
+
+.nav__button-close {
+  position: absolute;
+  left: 89%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.nav__button-close:hover, .nav__button-close:focus {
+  outline: 1px solid #2196f3;
+}
+.nav__button-close:hover .icon-menu-close, .nav__button-close:focus .icon-menu-close {
+  fill: #2196f3;
+}
+@media screen and (min-width: 768px) {
+  .nav__button-close {
+    display: none;
+  }
+}
+
+.button-close__box {
+  height: 19px;
+  width: 19px;
+}
+
+.mobile__form {
+  padding-top: 48px;
+  padding-left: 40px;
+  padding-bottom: 48px;
+  padding-right: 40px;
+}
+
+.mobile__list {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+}
+
+.mobile__item {
+  margin-bottom: 32px;
+}
+.mobile__item:last-child {
+  margin-bottom: 0;
+}
+.mobile__item a {
+  color: #212121;
+}
+.mobile__item a:hover, .mobile__item a:focus {
+  color: #2196f3;
+}
+
+.mobile__current {
+  margin-bottom: 32px;
+}
+.mobile__current a {
+  color: #2196f3;
+}
+
+.mobile__info {
+  margin-top: 302px;
+}
+
+.mobil__info__item {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+}
+.mobil__info__item a {
+  color: #2196f3;
+}
+
+.mobile__link {
+  margin-top: 32px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+}
+.mobile__link a {
+  color: #757575;
+}
+
+.mobile__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 450px;
+  margin-top: 64px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.social__item {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.social__item:first-child {
+  padding-left: 0;
+}
+.social__item:last-child {
+  padding-right: 0;
+  border: none;
+}
+.social__item a {
+  color: #2196f3;
 }
 
 nav {

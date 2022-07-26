@@ -21,12 +21,8 @@
     <header>
       <nav class="nav__container">
         <a href="./index.html" aria-label="Лого" class="logo">WebStudio</a>
-        <button
-          class="nav__button"
-          type="button"
-          aria-expanded="false"
-          aria-controls="menu-container"
-        >
+
+        <button class="nav__button" type="button" data-modal-open>
           <svg
             class="nav__icon"
             aria-label="Переключатель мобильного меню"
@@ -37,17 +33,59 @@
               class="icon-menu"
               href="./images/symbol-defs.svg#icon-menu"
             ></use>
-            <use
-              class="icon-menu-close"
-              href="./images/symbol-defs.svg#icon-close"
-            ></use>
           </svg>
         </button>
-        <!-- <div class="mobile__backdrop">
+
+        <div class="mobile__backdrop is-hidden" data-modal>
           <div class="mobile__menu">
-            <ul class="mobile__list"></ul>
+            <button class="nav__button-close" type="button" data-modal-close>
+              <svg class="button-close__box">
+                <use
+                  class="icon-menu-close"
+                  href="./images/symbol-defs.svg#icon-close"
+                ></use>
+              </svg>
+            </button>
+            <form class="mobile__form">
+              <ul class="mobile__list">
+                <li class="mobile__current">
+                  <a href="./index.html">Студия</a>
+                </li>
+                <li class="mobile__item">
+                  <a href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="mobile__item">
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+
+              <ul class="mobile__info">
+                <li class="mobil__info__item">
+                  <a href="#">+38 096 111 11 11</a>
+                </li>
+                <li class="mobile__link">
+                  <a href="#">info@devstudio.com</a>
+                </li>
+              </ul>
+
+              <ul class="mobile__social">
+                <li class="social__item">
+                  <a href="#">Instagram</a>
+                </li>
+                <li class="social__item">
+                  <a href="#">Twitter</a>
+                </li>
+                <li class="social__item">
+                  <a href="#">Facebook</a>
+                </li>
+                <li class="social__item">
+                  <a href="#">LinkedIn</a>
+                </li>
+              </ul>
+            </form>
           </div>
-        </div>-->
+        </div>
+
         <div class="nav__menu">
           <ul class="navigation">
             <li class="navigation__item">
@@ -234,7 +272,6 @@
         </div>
       </section>
 
-      <!-- чем мы занимаемся-->
       <section class="page-business">
         <div class="container">
           <h2 class="h2__title">Чем мы занимаемся</h2>

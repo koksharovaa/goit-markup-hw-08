@@ -1,4 +1,4 @@
-.page-team {
+.team {
     padding-top: 60px;
     padding-bottom: 60px;
 
@@ -10,7 +10,7 @@
     }
 }
 
-.team {
+.team__list {
     @extend %list;
     
     padding-top: 0;

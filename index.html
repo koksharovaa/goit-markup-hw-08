@@ -19,8 +19,10 @@
   <body>
     <!-- шапка -->
     <header>
-      <nav class="nav__container">
-        <a href="./index.html" aria-label="Лого" class="logo">WebStudio</a>
+      <nav class="navigation">
+        <a href="./index.html" aria-label="Лого" class="navigation__logo"
+          >WebStudio</a
+        >
 
         <button class="nav__button" type="button" data-menu-open>
           <svg
@@ -48,7 +50,7 @@
             </button>
             <form class="mobile__form">
               <ul class="mobile__list">
-                <li class="mobile__current">
+                <li class="mobile__item">
                   <a href="./index.html">Студия</a>
                 </li>
                 <li class="mobile__item">
@@ -86,8 +88,8 @@
           </div>
         </div>
 
-        <div class="nav__menu">
-          <ul class="navigation">
+        <div class="navigation__menu">
+          <ul class="navigation__list">
             <li class="navigation__item">
               <a
                 href="./index.html"
@@ -106,14 +108,14 @@
             </li>
           </ul>
 
-          <ul class="contact">
+          <ul class="contact__list">
             <li class="contact__item">
               <a
                 class="contact__link"
                 href="mailto:info@devstudio.com"
                 aria-label="Ссылка на почту"
               >
-                <svg class="mail" width="16px" height="12px">
+                <svg class="contact__icon" width="16px" height="12px">
                   <use href="./images/symbol-defs.svg#icon-envelope"></use>
                 </svg>
                 info@devstudio.com
@@ -125,7 +127,7 @@
                 aria-label="Ссылка на номер телефона"
                 class="contact__link"
               >
-                <svg class="mail" width="10px" height="15px">
+                <svg class="contact__icon" width="10px" height="15px">
                   <use href="./images/symbol-defs.svg#icon-smartphone"></use>
                 </svg>
                 +38 096 111 11 11
@@ -138,8 +140,8 @@
 
     <!-- герой -->
     <main>
-      <section class="page-hero">
-        <div class="overlay">
+      <section class="hero">
+        <div class="hero__overlay">
           <h1 class="hero__title">
             Эффективные решения <br />
             для вашего бизнеса
@@ -234,10 +236,10 @@
       </section>
 
       <!-- Benefits -->
-      <section class="page-benefits">
+      <section class="benefits">
         <div class="container">
-          <ul class="benefits">
-            <li class="details__item">
+          <ul class="benefits__list">
+            <li class="benefits__item--details">
               <h3 class="benefits__title">Внимание к деталям</h3>
               <p class="benefits__text">
                 Идейные соображения, а также начало повседневной работы по
@@ -245,7 +247,7 @@
               </p>
             </li>
 
-            <li class="clock__item">
+            <li class="benefits__item--clock">
               <h3 class="benefits__title">Пунктуальность</h3>
               <p class="benefits__text">
                 Задача организации, в особенности же рамки и место обучения
@@ -253,7 +255,7 @@
               </p>
             </li>
 
-            <li class="diagram__item">
+            <li class="benefits__item--diagram">
               <h3 class="benefits__title">Планирование</h3>
               <p class="benefits__text">
                 Равным образом консультация с широким активом в значительной
@@ -261,7 +263,7 @@
               </p>
             </li>
 
-            <li class="astronaut__item">
+            <li class="benefits__item--astronaut">
               <h3 class="benefits__title">Современные технологии</h3>
               <p class="benefits__text">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -272,10 +274,10 @@
         </div>
       </section>
 
-      <section class="page-business">
+      <section class="business">
         <div class="container">
           <h2 class="h2__title">Чем мы занимаемся</h2>
-          <ul class="business">
+          <ul class="business__list">
             <li class="business__item">
               <div class="business__image">
                 <img
@@ -314,10 +316,10 @@
       </section>
 
       <!-- наша команда -->
-      <section class="page-team">
+      <section class="team">
         <div class="container">
           <h2 class="h2__title">Наша команда</h2>
-          <ul class="team">
+          <ul class="team__list">
             <li class="team__item">
               <div class="team__image">
                 <img
@@ -542,10 +544,10 @@
       </section>
 
       <!-- постоянные клиенты -->
-      <section class="page-customers">
+      <section class="customers">
         <div class="container">
           <h2 class="h2__title">Постоянные клиенты</h2>
-          <ul class="customers">
+          <ul class="customers__list">
             <li class="customers__item">
               <a
                 href="#"
@@ -618,10 +620,10 @@
     </main>
 
     <!-- подвал -->
-    <footer class="page-footer">
+    <footer class="footer">
       <div class="footer__mobile">
-        <div class="mobile__box">
-          <div class="footer__mobile__info">
+        <div class="footer__box">
+          <div>
             <a href="./index.html" aria-label="Лого" class="footer__logo"
               >WebStudio</a
             >
@@ -652,7 +654,7 @@
             </ul>
           </div>
 
-          <div class="footer__mobile__social">
+          <div class="footer__join">
             <b class="join">Присоединяйтесь</b>
             <ul class="join__add">
               <li class="join__item">
@@ -687,7 +689,7 @@
           </div>
         </div>
 
-        <div class="footer__mobile__join">
+        <div class="join__box">
           <b class="join">Подпишитесь на рассылку</b>
           <form action="" class="form__footer">
             <input
@@ -701,7 +703,7 @@
         </div>
       </div>
 
-      <div class="footer__container">
+      <div class="footer__desctop">
         <div class="footer__title">
           <div class="title__logo">
             <a href="./index.html" aria-label="Лого" class="footer__logo"

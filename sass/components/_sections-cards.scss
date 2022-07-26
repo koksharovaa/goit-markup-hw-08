@@ -1,4 +1,4 @@
-.cards {
+.cards__list {
     @extend %list;
 
     padding-top: 0;
@@ -39,11 +39,6 @@
 
     @media screen and(min-width: $tablet){
         width: calc((100% - 30px) / 2);
-        
-
-        // :nth-child(2n + 1) {
-        //         margin-right: 30px;
-        //     }
     }
 
     @media screen and(min-width:$desctop) {

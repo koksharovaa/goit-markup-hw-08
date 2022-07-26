@@ -1,4 +1,4 @@
-.page-benefits {
+.benefits {
     padding-bottom: 60px;
     padding-top: 60px;
 
@@ -8,7 +8,7 @@
     }
 }
 
-.benefits {
+.benefits__list {
     @extend %list;
     
     padding-top: 0;
@@ -45,7 +45,7 @@
     }
 }
 
-.details__item {
+.benefits__item--details {
     @extend .item;
 
     margin-bottom: 30px;
@@ -64,7 +64,7 @@
         }
 }
 
-.clock__item {
+.benefits__item--clock {
     @extend .item;
 
     margin-bottom: 30px;
@@ -78,7 +78,7 @@
     }
 }
 
-.diagram__item {
+.benefits__item--diagram {
     @extend .item;
 
     margin-bottom: 30px;
@@ -97,7 +97,7 @@
         }
 }
 
-.astronaut__item {
+.benefits__item--astronaut {
     @extend .item;
 
     &::before {

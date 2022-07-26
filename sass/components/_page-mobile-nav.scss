@@ -7,6 +7,8 @@
 
     background-color: white;
 
+    z-index: 1;
+
     @media screen and(min-width: $tablet) {
         display: none;
     }
@@ -88,6 +90,8 @@
 }
 
 .mobile__form {
+    max-width: 480px;
+    max-height: 796px;
     padding-top: 48px;
     padding-left: 40px;
     padding-bottom: 48px;
@@ -131,7 +135,7 @@
 
 .mobile__info {
     @extend %list;
-    margin-top: 302px;
+    margin-top: 43%;
 }
 
 .mobil__info__item {
@@ -163,7 +167,7 @@
     @extend %list;
     display: flex;
     max-width: 450px;
-    margin-top: 64px;
+    margin-top: 9%;
     flex-wrap: wrap;
 }
 

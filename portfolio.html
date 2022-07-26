@@ -18,17 +18,79 @@
   <body class="body">
     <!-- шапка сайта -->
     <header class="portfolio header">
-      <nav class="container">
-        <a href="./index.html" aria-label="Лого" class="logo">WebStudio</a>
-        <div class="nav__menu">
-          <ul class="navigation">
+      <nav class="navigation">
+        <a href="./index.html" aria-label="Лого" class="navigation__logo"
+          >WebStudio</a
+        >
+
+        <button class="nav__button" type="button" data-menu-open>
+          <svg
+            class="nav__icon"
+            aria-label="Переключатель мобильного меню"
+            width="24px"
+            height="16px"
+          >
+            <use
+              class="icon-menu"
+              href="./images/symbol-defs.svg#icon-menu"
+            ></use>
+          </svg>
+        </button>
+
+        <div class="mobile__backdrop is-hidden" data-modal-menu>
+          <div class="mobile__menu">
+            <button class="nav__button-close" type="button" data-menu-close>
+              <svg class="button-close__box">
+                <use
+                  class="icon-menu-close"
+                  href="./images/symbol-defs.svg#icon-close"
+                ></use>
+              </svg>
+            </button>
+            <form class="mobile__form">
+              <ul class="mobile__list">
+                <li class="mobile__item">
+                  <a href="./index.html">Студия</a>
+                </li>
+                <li class="mobile__item">
+                  <a href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="mobile__item">
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+
+              <ul class="mobile__info">
+                <li class="mobil__info__item">
+                  <a href="#">+38 096 111 11 11</a>
+                </li>
+                <li class="mobile__link">
+                  <a href="#">info@devstudio.com</a>
+                </li>
+              </ul>
+
+              <ul class="mobile__social">
+                <li class="social__item">
+                  <a href="#">Instagram</a>
+                </li>
+                <li class="social__item">
+                  <a href="#">Twitter</a>
+                </li>
+                <li class="social__item">
+                  <a href="#">Facebook</a>
+                </li>
+                <li class="social__item">
+                  <a href="#">LinkedIn</a>
+                </li>
+              </ul>
+            </form>
+          </div>
+        </div>
+
+        <div class="navigation__menu">
+          <ul class="navigation__list">
             <li class="navigation__item">
-              <a
-                href="./index.html"
-                aria-label="Страница Студия"
-                class="navigation__item"
-                >Студия</a
-              >
+              <a href="./index.html" aria-label="Страница Студия">Студия</a>
             </li>
             <li class="navigation__item">
               <a
@@ -43,14 +105,14 @@
             </li>
           </ul>
 
-          <ul class="contact">
+          <ul class="contact__list">
             <li class="contact__item">
               <a
                 class="contact__link"
                 href="mailto:info@devstudio.com"
                 aria-label="Ссылка на почту"
               >
-                <svg class="mail" width="16px" height="12px">
+                <svg class="contact__icon" width="16px" height="12px">
                   <use href="./images/symbol-defs.svg#icon-envelope"></use>
                 </svg>
                 info@devstudio.com
@@ -62,7 +124,7 @@
                 aria-label="Ссылка на номер телефона"
                 class="contact__link"
               >
-                <svg class="mail" width="10px" height="15px">
+                <svg class="contact__icon" width="10px" height="15px">
                   <use href="./images/symbol-defs.svg#icon-smartphone"></use>
                 </svg>
                 +38 096 111 11 11
@@ -76,7 +138,7 @@
     <!-- герой -->
     <main>
       <!-- секция 1 -->
-      <section class="page-examples">
+      <section class="examples">
         <div class="container">
           <ul class="examples__navigation">
             <li class="examples__item">
@@ -96,7 +158,7 @@
             </li>
           </ul>
 
-          <ul class="cards">
+          <ul class="cards__list">
             <li class="cards__item">
               <div class="business__image">
                 <img
@@ -275,10 +337,10 @@
     </main>
 
     <!-- подвал сайта -->
-    <footer class="page-footer">
+    <footer class="footer">
       <div class="footer__mobile">
-        <div class="mobile__box">
-          <div class="footer__mobile__info">
+        <div class="footer__box">
+          <div>
             <a href="./index.html" aria-label="Лого" class="footer__logo"
               >WebStudio</a
             >
@@ -309,7 +371,7 @@
             </ul>
           </div>
 
-          <div class="footer__mobile__social">
+          <div class="footer__join">
             <b class="join">Присоединяйтесь</b>
             <ul class="join__add">
               <li class="join__item">
@@ -344,7 +406,7 @@
           </div>
         </div>
 
-        <div class="footer__mobile__join">
+        <div class="join__box">
           <b class="join">Подпишитесь на рассылку</b>
           <form action="" class="form__footer">
             <input
@@ -358,7 +420,7 @@
         </div>
       </div>
 
-      <div class="footer__container">
+      <div class="footer__desctop">
         <div class="footer__title">
           <div class="title__logo">
             <a href="./index.html" aria-label="Лого" class="footer__logo"
@@ -446,5 +508,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

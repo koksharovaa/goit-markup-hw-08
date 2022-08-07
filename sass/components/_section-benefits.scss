@@ -2,7 +2,7 @@
     padding-bottom: 60px;
     padding-top: 60px;
 
-    @media screen and(min-width: $desctop){
+    @media screen and(min-width: $desktop){
         padding-top: 94px;
         padding-bottom: 94px;
     }
@@ -19,8 +19,8 @@
         flex-wrap: wrap;
     }
 
-    @media screen and(min-width: $desctop){
-        @include flex($align: none, $justify: space-between);
+    @media screen and(min-width: $desktop){
+        @include flex($align: normal, $justify: space-between);
     }
 }
 
@@ -29,7 +29,7 @@
         width: calc((100% - 30px) / 2);
     }
 
-    @media screen and(min-width: $desctop){
+    @media screen and(min-width: $desktop){
         width: calc((100% - 90px) / 4);
     }
     
@@ -58,7 +58,7 @@
             margin-right: 30px;
         }
 
-        @media screen and(min-width: $desctop){
+        @media screen and(min-width: $desktop){
             margin-bottom: 0;
             margin-right: 0;
         }
@@ -73,7 +73,7 @@
             background-image: url('../images/clock.svg');
         }
 
-    @media screen and(min-width: $desctop){
+    @media screen and(min-width: $desktop){
         margin-bottom: 0;
     }
 }
@@ -88,7 +88,7 @@
             margin-bottom: 0;
         }
 
-    @media screen and(min-width: $desctop){
+    @media screen and(min-width: $desktop){
         margin-right: 0;
     }
 

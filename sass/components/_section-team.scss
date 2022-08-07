@@ -4,7 +4,7 @@
 
     background-color: $secondary-bg-color;
 
-    @media screen and(min-width: $desctop){
+    @media screen and(min-width: $desktop){
         padding-bottom: 94px;
         padding-top: 94px;
     }
@@ -22,8 +22,8 @@
         justify-content: space-between;
     }
     
-    @media screen and(min-width: $desctop){
-        @include flex($align: none, $justify: space-between);
+    @media screen and(min-width: $desktop){
+        @include flex($align: normal, $justify: space-between);
     }
 }
 
@@ -48,7 +48,7 @@
 
     }
 
-    @media screen and(min-width: $desctop){
+    @media screen and(min-width: $desktop){
         width: calc((100% - 90px) / 4);
 
         margin-bottom: 0;
@@ -85,13 +85,13 @@
 
 .team__info {
     @extend %list;
-    @include flex($align:none);
+    @include flex($align: normal);
     padding-left: 32px;
     padding-right: 32px;
     padding-bottom: 24px;
 }
 
-.info__link {
+.team__link {
     @include flex;
     width: 44px;
     height: 44px;
@@ -104,12 +104,12 @@
             background-color: $accent-color;
         }
 
-    &:hover .info__social, &:focus .info__social {
+    &:hover .team__social, &:focus .team__social {
         fill: $white-color;
     }
 }
 
-.info__box {
+.team__box {
     margin-right: 5px;
         margin-left: 5px;
     
@@ -122,6 +122,6 @@
         }
 }
 
-.info__social {
+.team__social {
     fill: #afb1b8;
 }

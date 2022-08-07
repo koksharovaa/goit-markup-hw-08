@@ -15,7 +15,7 @@
         justify-content: space-between;
     }
 
-    @media screen and(min-width: $desctop){
+    @media screen and(min-width: $desktop){
         margin-top: 0;
     }
 }
@@ -41,7 +41,7 @@
         width: calc((100% - 30px) / 2);
     }
 
-    @media screen and(min-width:$desctop) {
+    @media screen and(min-width:$desktop) {
         width: calc((100% - 60px) / 3);
     
         margin-right: 30px;

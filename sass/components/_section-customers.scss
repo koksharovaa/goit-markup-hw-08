@@ -1,24 +1,23 @@
 .customers {
-        padding-top: 60px;
-        padding-bottom: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
         
-            @media screen and(min-width: $desctop) {
-                padding-bottom: 94px;
-                padding-top: 94px;
-            }
+    @media screen and(min-width: $desktop) {
+        padding-bottom: 94px;
+        padding-top: 94px;
     }
+}
 
 .customers__list {
     @extend %list;
     
-    display: flex;
+    @include flex($align: flex-start, $justify: space-between);
     flex-wrap: wrap;
-    justify-content: space-between;
 
     padding-top: 0;
     padding-bottom: 0;
 
-    @media screen and(min-width: $desctop){
+    @media screen and(min-width: $desktop){
         @include flex($align: none, $justify: space-between);
     }
 }
@@ -40,7 +39,7 @@
         }
     }
 
-    @media screen and(min-width: $desctop){
+    @media screen and(min-width: $desktop){
         width: calc((100% - 150px) / 6);
 
         margin-bottom: 0;
@@ -80,7 +79,7 @@
         fill: $accent-color;
     }
 
-    @media screen and(min-width: $desctop){
+    @media screen and(min-width: $desktop){
         width: 170px;
         height: 90px;
 
@@ -88,5 +87,11 @@
         padding-bottom: 16px;
         padding-right: 32px;
         padding-left: 32px;
+    }
+
+    @media screen and(max-width: 320px){
+        padding-right: 0;
+        padding-left: 0;
+        
     }
 }

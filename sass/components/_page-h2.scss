@@ -1,18 +1,18 @@
-.h2__title {
+.title {
     margin-top: 0;
     color: $secondary-text-color;
 
     font-weight: 700;
     text-align: center;
 
-    @media screen and(max-width:1199px){
+    @media screen and(max-width:1200px){
         margin-bottom: 30px;
 
         font-size: 28px;
         line-height: 33px;
     }
 
-    @media screen and(min-width: $desctop){
+    @media screen and(min-width: $desktop){
         margin-bottom: 50px;
 
         font-size: 36px;

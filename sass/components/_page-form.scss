@@ -10,7 +10,7 @@
         width: 450px;
     }
 
-    @media screen and(min-width: $desctop){
+    @media screen and(min-width: $desktop){
         width: 528px;
     }
 }
@@ -25,7 +25,7 @@
      
     color: $secondary-text-color;
 
-    @media screen and(min-width: $desctop){
+    @media screen and(min-width: $desktop){
         line-height: 23px;
      }
  }

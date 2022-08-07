@@ -2,7 +2,7 @@
     padding-top: 60px;
     padding-bottom: 60px;
     
-        @media screen and(min-width: $desctop) {
+        @media screen and(min-width: $desktop) {
             padding-bottom: 94px;
             padding-top: 94px;
         }
@@ -22,8 +22,8 @@
         justify-content: center;
     }
 
-    @media screen and(min-width: $desctop){
-        @include flex($align: none);
+    @media screen and(min-width: $desktop){
+        @include flex($align: normal);
         margin-bottom: 50px;
     }
 }

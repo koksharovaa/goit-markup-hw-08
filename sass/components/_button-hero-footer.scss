@@ -35,7 +35,7 @@
     flex-direction: row;
     
 
-    @media screen and(min-width: $desctop){
+    @media screen and(min-width: $desktop){
         
         margin: 0;
         flex-direction: row;
@@ -47,7 +47,8 @@
         height: 24px;
         margin-left: 10px;
         background-size: contain;
-        background-image: url('../images/symbol-defs.svg#icon-telegram');
+        background-image: url('../../images/telegram.svg');
+        fill: white;
         background-repeat: no-repeat;
         cursor: pointer;
         align-items: center;

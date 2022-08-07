@@ -2,14 +2,18 @@
         padding-bottom: 94px;
         padding-top: 0;
 
-        @media screen and(max-width: 1199px){
+        @media screen and(max-width: 1200px){
             display: none;
+        }
+
+        @media screen and(min-width: 1200px){
+            display: flex;
         }
     }
 
 .business__list{
     @extend %list;
-    @include flex($align:none, $justify: space-between);
+    @include flex($align:normal, $justify: space-between);
 
     padding-top: 0;
     padding-bottom: 0;
@@ -21,7 +25,7 @@
 
 .business__image {
     position: relative;
-    @include flex( $align:none, $justify:none);
+    @include flex( $align: normal, $justify: start);
 
     overflow: hidden;
 }

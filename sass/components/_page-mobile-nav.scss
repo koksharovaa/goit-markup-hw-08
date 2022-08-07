@@ -27,12 +27,17 @@
 
     background-color: $white-color;
 
+    @media screen and(min-width: 481px){
+        margin-right: 15%;
+        margin-left: 15%;
+    }
+
     @media screen and (min-width: 768px) {
         display: none;
     }
 }
 
-.nav__button {
+.navigation__button {
     @include flex;
     @include animation(fill);
     width: 40px;
@@ -57,7 +62,7 @@
     }
 }
 
-.nav__button-close {
+.navigation__button-close {
     position: absolute;
     left: 89%;
     @include flex;
@@ -89,7 +94,7 @@
         width: 19px;
 }
 
-.mobile__form {
+.mobile__box {
     max-width: 480px;
     max-height: 796px;
     padding-top: 48px;
@@ -97,6 +102,10 @@
     padding-bottom: 48px;
     padding-right: 40px;
 }
+
+// .mobile__korobka {
+//     align-content: center;
+// }
 
 .mobile__list {
     @extend %list;

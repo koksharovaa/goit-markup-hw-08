@@ -16,23 +16,27 @@
         flex-wrap: wrap;
     }
 
-    @media screen and(min-width: $desctop) {
+    @media screen and(min-width: $desktop) {
         display: none;
     }
 }
 
-.footer__desctop {
+.footer__desktop {
     @extend .container;
 
     padding-top: 60px;
     padding-bottom: 60px;
 
-    @media screen and(max-width: 1199px) {
-        display: none;
-    }
+    @media screen and(max-width: 1200px) {
+            display: none;
+        }
+    
+    @media screen and(min-width: 1200px) {
+            display: flex;
+        }
 
-    @media screen and(min-width: $desctop) {
-        width: $desctop;
+    @media screen and(min-width: $desktop) {
+        width: $desktop;
         display: flex;
         flex-direction: column;
     }
@@ -49,7 +53,7 @@
         font-size: 24px;
         line-height: 28px;
 
-    @media screen and(min-width: $desctop){
+    @media screen and(min-width: $desktop){
         font-size: 26px;
         line-height: 31px;
     }
@@ -65,20 +69,20 @@
 }
 
 .title__join,
-.join__block {
+.footer__block {
     width: 25%;
 }
 
 .title__subscribe,
-.form__container {
+.footer__form {
     width: 50%;
 }
 
 .footer__info {
-    @include flex($justify: none, $align: none);
+    @include flex($justify: none, $align: flex-start);
 }
 
-.footer__list {
+.address__list {
     margin-top: 20px;
     list-style: none;
 }
@@ -109,12 +113,12 @@
         color: $accent-color;
     }
 
-    @media screen and(min-width: $desctop){
+    @media screen and(min-width: $desktop){
         margin-top: 9px;
     }
 }
 
-.join__block {
+.footer__block {
     display: block;
 }
 
@@ -132,8 +136,8 @@
     @include flex;
     margin-top: 20px;
 
-    @media screen and(min-width: $desctop){
-        @include flex($justify: flex-start, $align: none);
+    @media screen and(min-width: $desktop){
+        @include flex($justify: flex-start, $align: flex-start);
     }
 }
 
@@ -191,7 +195,7 @@
         width: 450px;
     }
 
-    @media screen and(min-width: $desctop){
+    @media screen and(min-width: $desktop){
         width: 358px;
         
         margin-right: 12px;
@@ -222,7 +226,7 @@
     }
 }
 
-.footer__join {
+.footer__links {
     margin-top: 60px;
 
     @media screen and(min-width: $tablet){
@@ -230,6 +234,6 @@
     }
 }
 
-.join__box {
+.footer__form--mobile {
     margin-top: 60px;
 }

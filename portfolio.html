@@ -23,9 +23,8 @@
           >WebStudio</a
         >
 
-        <button class="nav__button" type="button" data-menu-open>
+        <button class="navigation__button" type="button" data-menu-open>
           <svg
-            class="nav__icon"
             aria-label="Переключатель мобильного меню"
             width="24px"
             height="16px"
@@ -39,7 +38,11 @@
 
         <div class="mobile__backdrop is-hidden" data-modal-menu>
           <div class="mobile__menu">
-            <button class="nav__button-close" type="button" data-menu-close>
+            <button
+              class="navigation__button-close"
+              type="button"
+              data-menu-close
+            >
               <svg class="button-close__box">
                 <use
                   class="icon-menu-close"
@@ -47,7 +50,7 @@
                 ></use>
               </svg>
             </button>
-            <form class="mobile__form">
+            <div class="mobile__box">
               <ul class="mobile__list">
                 <li class="mobile__item">
                   <a href="./index.html">Студия</a>
@@ -83,7 +86,7 @@
                   <a href="#">LinkedIn</a>
                 </li>
               </ul>
-            </form>
+            </div>
           </div>
         </div>
 
@@ -94,8 +97,8 @@
             </li>
             <li class="navigation__item">
               <a
-                class="navigation__link"
                 href="./portfolio.html"
+                class="navigation__link"
                 aria-label="Страница Портфолио"
                 >Портфолио</a
               >
@@ -161,12 +164,38 @@
           <ul class="cards__list">
             <li class="cards__item">
               <div class="business__image">
-                <img
-                  class="item__image"
-                  src="./images/notebook.jpg"
-                  alt="ноутбук"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/laptop-450.jpg 1x,
+                      ./images/laptop-900.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(max-width: 767px)"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  />
+                  <source
+                    srcset="
+                      ./images/laptop-370.jpg 1x,
+                      ./images/laptop-740.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(min-width: 768px)"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  />
+                  <img
+                    class="item__image"
+                    srcset="
+                      ./images/laptop-450.jpg 1x,
+                      ./images/laptop-900.jpg 2x,
+                      ./images/laptop-370.jpg 1x,
+                      ./images/laptop-740.jpg 2x
+                    "
+                    src="./images/laptop-370.jpg"
+                    alt="ноутбук"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  />
+                </picture>
                 <div class="cards__replacement">
                   <p>
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -181,12 +210,39 @@
             </li>
             <li class="cards__item">
               <div class="business__image">
-                <img
-                  class="item__image"
-                  src="./images/poster.jpg"
-                  alt="постер с баскетболистами"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/poster-450.jpg 1x,
+                      ./images/poster-900.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(max-width: 767px)"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  />
+                  <source
+                    srcset="
+                      ./images/poster-370.jpg 1x,
+                      ./images/poster-740.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(min-width: 768px)"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  />
+                  <img
+                    class="item__image"
+                    srcset="
+                      ./images/poster-450.jpg 1x,
+                      ./images/poster-900.jpg 2x,
+                      ./images/poster-370.jpg 1x,
+                      ./images/poster-740.jpg 2x
+                    "
+                    src="./images/poster-370.jpg"
+                    alt="постер с баскетболистами"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  />
+                </picture>
+
                 <div class="cards__replacement">
                   <p>
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -200,12 +256,39 @@
             </li>
             <li class="cards__item">
               <div class="business__image">
-                <img
-                  class="item__image"
-                  src="./images/poster-seafood.jpg"
-                  alt="постер ресторана морской еды"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/seafood-450.jpg 1x,
+                      ./images/seafood-900.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(max-width: 767px)"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  />
+                  <source
+                    srcset="
+                      ./images/seafood-370.jpg 1x,
+                      ./images/seafood-740.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(min-width: 768px)"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  />
+                  <img
+                    class="item__image"
+                    srcset="
+                      ./images/seafood-450.jpg 1x,
+                      ./images/seafood-900.jpg 2x,
+                      ./images/seafood-370.jpg 1x,
+                      ./images/seafood-740.jpg 2x
+                    "
+                    src="./images/seafood-370.jpg"
+                    alt="постер ресторана морской еды"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  />
+                </picture>
+
                 <div class="cards__replacement">
                   <p>
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -219,12 +302,39 @@
             </li>
             <li class="cards__item">
               <div class="business__image">
-                <img
-                  class="item__image"
-                  src="./images/headphones.jpg"
-                  alt="наушники"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/headphones-450.jpg 1x,
+                      ./images/headphones-900.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(max-width: 767px)"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  />
+                  <source
+                    srcset="
+                      ./images/headphones-370.jpg 1x,
+                      ./images/headphones-740.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(min-width: 768px)"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  />
+                  <img
+                    class="item__image"
+                    srcset="
+                      ./images/headphones-450.jpg 1x,
+                      ./images/headphones-900.jpg 2x,
+                      ./images/headphones-370.jpg 1x,
+                      ./images/headphones-740.jpg 2x
+                    "
+                    src="./images/headphones-370.jpg"
+                    alt="наушники"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  />
+                </picture>
+
                 <div class="cards__replacement">
                   <p>
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -238,12 +348,39 @@
             </li>
             <li class="cards__item">
               <div class="business__image">
-                <img
-                  class="item__image"
-                  src="./images/carton-boxes.jpg"
-                  alt="две картонных коробки"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/boxes-450.jpg 1x,
+                      ./images/boxes-900.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(max-width: 767px)"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  />
+                  <source
+                    srcset="
+                      ./images/boxes-370.jpg 1x,
+                      ./images/boxes-740.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(min-width: 768px)"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  />
+                  <img
+                    class="item__image"
+                    srcset="
+                      ./images/boxes-450.jpg 1x,
+                      ./images/boxes-900.jpg 2x,
+                      ./images/boxes-370.jpg 1x,
+                      ./images/boxes-740.jpg 2x
+                    "
+                    src="./images/boxes-370.jpg"
+                    alt="две картонных коробки"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  />
+                </picture>
+
                 <div class="cards__replacement">
                   <p>
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -257,12 +394,39 @@
             </li>
             <li class="cards__item">
               <div class="business__image">
-                <img
-                  class="item__image"
-                  src="./images/monitor.jpg"
-                  alt="монитор компьютера"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/monitor-450.jpg 1x,
+                      ./images/monitor-900.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(max-width: 767px)"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  />
+                  <source
+                    srcset="
+                      ./images/monitor-370.jpg 1x,
+                      ./images/monitor-740.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(min-width: 768px)"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  />
+                  <img
+                    class="item__image"
+                    srcset="
+                      ./images/monitor-450.jpg 1x,
+                      ./images/monitor-900.jpg 2x,
+                      ./images/monitor-370.jpg 1x,
+                      ./images/monitor-740.jpg 2x
+                    "
+                    src="./images/monitor-370.jpg"
+                    alt="монитор компьютера"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  />
+                </picture>
+
                 <div class="cards__replacement">
                   <p>
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -276,12 +440,33 @@
             </li>
             <li class="cards__item">
               <div class="business__image">
-                <img
-                  class="item__image"
-                  src="./images/book.jpg"
-                  alt="открытая книга"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="./images/book-450.jpg 1x, ./images/book-900.jpg 2x"
+                    type="image/jpg"
+                    media="(max-width: 767px)"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  />
+                  <source
+                    srcset="./images/book-370.jpg 1x, ./images/book-740.jpg 2x"
+                    type="image/jpg"
+                    media="(min-width: 768px)"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  />
+                  <img
+                    class="item__image"
+                    srcset="
+                      ./images/book-450.jpg 1x,
+                      ./images/book-900.jpg 2x,
+                      ./images/book-370.jpg 1x,
+                      ./images/book-740.jpg 2x
+                    "
+                    src="./images/book-370.jpg"
+                    alt="открытая книга"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  />
+                </picture>
+
                 <div class="cards__replacement">
                   <p>
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -295,12 +480,39 @@
             </li>
             <li class="cards__item">
               <div class="business__image">
-                <img
-                  class="item__image"
-                  src="./images/tag-LAB.jpg"
-                  alt="бирка с надпьсью ЛАБ"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/tag-LAB-450.jpg 1x,
+                      ./images/tag-LAB-900.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(max-width: 767px)"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  />
+                  <source
+                    srcset="
+                      ./images/tag-LAB-370.jpg 1x,
+                      ./images/tag-LAB-740.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(min-width: 768px)"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  />
+                  <img
+                    class="item__image"
+                    srcset="
+                      ./images/tag-LAB-450.jpg 1x,
+                      ./images/tag-LAB-900.jpg 2x,
+                      ./images/tag-LAB-370.jpg 1x,
+                      ./images/tag-LAB-740.jpg 2x
+                    "
+                    src="./images/tag-LAB-370.jpg"
+                    alt="бирка с надпьсью ЛАБ"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  />
+                </picture>
+
                 <div class="cards__replacement">
                   <p>
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -314,12 +526,39 @@
             </li>
             <li class="cards__item">
               <div class="business__image">
-                <img
-                  class="item__image"
-                  src="./images/person-by-laptop.jpg"
-                  alt="человек, работающий за ноутбуком"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop-450.jpg 1x,
+                      ./images/desktop-900.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(max-width: 767px)"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  />
+                  <source
+                    srcset="
+                      ./images/desktop-370.jpg 1x,
+                      ./images/desktop-740.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(min-width: 768px)"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  />
+                  <img
+                    class="item__image"
+                    srcset="
+                      ./images/desktop-450.jpg 1x,
+                      ./images/desktop-900.jpg 2x,
+                      ./images/desktop-370.jpg 1x,
+                      ./images/desktop-740.jpg 2x
+                    "
+                    src="./images/desktop-370.jpg"
+                    alt="человек, работающий за ноутбуком"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  />
+                </picture>
+
                 <div class="cards__replacement">
                   <p>
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -344,7 +583,7 @@
             <a href="./index.html" aria-label="Лого" class="footer__logo"
               >WebStudio</a
             >
-            <ul class="footer__list">
+            <ul class="address__list">
               <li class="footer__address">
                 <a href="#" class="footer__address" target="_blank"
                   >г. Киев, пр-т Леси Украинки, 26</a
@@ -371,7 +610,7 @@
             </ul>
           </div>
 
-          <div class="footer__join">
+          <div class="footer__links">
             <b class="join">Присоединяйтесь</b>
             <ul class="join__add">
               <li class="join__item">
@@ -406,7 +645,7 @@
           </div>
         </div>
 
-        <div class="join__box">
+        <div class="footer__form--mobile">
           <b class="join">Подпишитесь на рассылку</b>
           <form action="" class="form__footer">
             <input
@@ -420,7 +659,7 @@
         </div>
       </div>
 
-      <div class="footer__desctop">
+      <div class="footer__desktop">
         <div class="footer__title">
           <div class="title__logo">
             <a href="./index.html" aria-label="Лого" class="footer__logo"
@@ -436,7 +675,7 @@
         </div>
         <div class="footer__info">
           <div class="footer__navigation">
-            <ul class="footer__list">
+            <ul class="address__list">
               <li class="footer__address">
                 <a href="#" class="footer__address" target="_blank"
                   >г. Киев, пр-т Леси Украинки, 26</a
@@ -462,7 +701,7 @@
               </li>
             </ul>
           </div>
-          <div class="join__block">
+          <div class="footer__block">
             <ul class="join__add">
               <li class="join__item">
                 <a href="#" aria-label="Ссылка на Instagram" class="join__link">
@@ -494,7 +733,7 @@
               </li>
             </ul>
           </div>
-          <div class="form__container">
+          <div class="footer__form">
             <form action="" class="form__footer">
               <input
                 class="footer__email"

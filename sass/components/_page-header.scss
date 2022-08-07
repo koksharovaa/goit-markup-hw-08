@@ -19,8 +19,8 @@ nav {
         justify-content: none;
     }
 
-    @media screen and(min-width: $desctop) {
-        width: $desctop;
+    @media screen and(min-width: $desktop) {
+        width: $desktop;
     }
 }
 
@@ -34,13 +34,13 @@ nav {
 
 .navigation__list {
     @extend %list;
-    @include flex($justify:none, $align:none);
+    @include flex($justify:start, $align:normal);
 
     @media screen and(min-width: $tablet){
         margin-left: 88px;
     }
 
-    @media screen and(min-width: $desctop){
+    @media screen and(min-width: $desktop){
         margin-left: 93px;
     }
 }
@@ -106,7 +106,7 @@ nav {
         margin-left: 50px;
     }
 
-    @media screen and(min-width: $desctop){
+    @media screen and(min-width: $desktop){
         @include flex($justify: flex-end);
         margin-left: 287px;
         margin-top: 0;
@@ -114,7 +114,7 @@ nav {
 }
 
 .contact__item {
-    @media screen and(min-width: $desctop) {
+    @media screen and(min-width: $desktop) {
         &:nth-child(n+2) {
                 margin-left: 20px;
             }
@@ -144,7 +144,7 @@ nav {
         fill: $accent-color;
     }
 
-    @media screen and(min-width: $desctop){
+    @media screen and(min-width: $desktop){
         padding-top: 32px;
         padding-bottom: 32px;
 

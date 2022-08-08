@@ -37,20 +37,17 @@
         </button>
 
         <div class="mobile__backdrop is-hidden" data-modal-menu>
-          <div class="mobile__menu">
+          <div class="mobile__modal">
             <button
-              class="navigation__button-close"
+              class="navigation__button--close"
               type="button"
               data-menu-close
             >
-              <svg class="button-close__box">
-                <use
-                  class="icon-menu-close"
-                  href="./images/symbol-defs.svg#icon-close"
-                ></use>
+              <svg>
+                <use href="./images/symbol-defs.svg#icon-close"></use>
               </svg>
             </button>
-            <div class="mobile__box">
+            <div class="mobile__container">
               <ul class="mobile__list">
                 <li class="mobile__item">
                   <a href="./index.html">Студия</a>
@@ -64,10 +61,10 @@
               </ul>
 
               <ul class="mobile__info">
-                <li class="mobil__info__item">
+                <li class="info__item--link">
                   <a href="#">+38 096 111 11 11</a>
                 </li>
-                <li class="mobile__link">
+                <li class="info__item">
                   <a href="#">info@devstudio.com</a>
                 </li>
               </ul>
@@ -97,8 +94,8 @@
             </li>
             <li class="navigation__item">
               <a
-                href="./portfolio.html"
                 class="navigation__link"
+                href="./portfolio.html"
                 aria-label="Страница Портфолио"
                 >Портфолио</a
               >
@@ -649,7 +646,7 @@
           <b class="join">Подпишитесь на рассылку</b>
           <form action="" class="form__footer">
             <input
-              class="footer__email"
+              class="footer__input"
               type="text"
               name="email"
               placeholder="E-mail"
@@ -736,7 +733,7 @@
           <div class="footer__form">
             <form action="" class="form__footer">
               <input
-                class="footer__email"
+                class="footer__input"
                 type="text"
                 name="email"
                 placeholder="E-mail"
